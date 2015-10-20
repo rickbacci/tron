@@ -60,3 +60,39 @@ describe('When the ', function () {
   });
 
 });
+
+
+describe('Canvas boundries', function () {
+
+  it('moves off the screen from left to right', function () {
+    var block = new Block(0, 0, 10, 10, Block.canvas, Block.context);
+
+    block.move("left")
+    assert.equal(block.x, 600)
+  });
+
+  it('moves off the screen from right to left', function () {
+    var block = new Block(600, 0, 10, 10, Block.canvas, Block.context);
+
+    block.move("right")
+    assert.equal(block.x, 0)
+  });
+
+  it('moves off the screen from top to bottom', function () {
+    var block = new Block(0, 0, 10, 10, Block.canvas, Block.context);
+
+    block.move("up")
+    assert.equal(block.y, 600)
+  });
+
+  it('moves off the screen from bottom to top', function () {
+    var block = new Block(0, 600, 10, 10, Block.canvas, Block.context);
+
+    block.move("down")
+    assert.equal(block.y, 0)
+  });
+
+
+});
+
+
