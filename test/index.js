@@ -22,6 +22,10 @@ describe('When the ', function () {
   it('up arrow is pressed the block should move up', function () {
     var block = new Block(10, 10, 15, 15, Block.canvas, Block.context);
     assert(block);
+    assert.equal(block.y, 10)
+    assert.equal(block.x, 10)
+    keyPress(37);
+    assert.notEqual(block.x, 10)
   });
 
 });
