@@ -1,7 +1,7 @@
 const chai = require('chai');
 const assert = chai.assert;
-// const canvas = require('./index.js');
 const Block = require('../lib/block.js');
+const $ = require('jquery')
 
 
 describe('my test suite', function () {
@@ -24,9 +24,39 @@ describe('When the ', function () {
     assert(block);
     assert.equal(block.y, 10)
     assert.equal(block.x, 10)
-    keyPress(37);
-    assert.notEqual(block.x, 10)
+
+    block.move("up")
+    assert.equal(block.y, 9)
+  });
+
+  it('the block should move down', function () {
+    var block = new Block(10, 10, 15, 15, Block.canvas, Block.context);
+    assert(block);
+    assert.equal(block.y, 10)
+    assert.equal(block.x, 10)
+
+    block.move("down")
+    assert.equal(block.y, 11)
+  });
+
+  it('the block should move left', function () {
+    var block = new Block(10, 10, 15, 15, Block.canvas, Block.context);
+    assert(block);
+    assert.equal(block.y, 10)
+    assert.equal(block.x, 10)
+
+    block.move("left")
+    assert.equal(block.x, 9)
+  });
+
+  it('the block should move right', function () {
+    var block = new Block(10, 10, 15, 15, Block.canvas, Block.context);
+    assert(block);
+    assert.equal(block.y, 10)
+    assert.equal(block.x, 10)
+
+    block.move("right")
+    assert.equal(block.x, 11)
   });
 
 });
-
