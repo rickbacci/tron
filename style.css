@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'tron';
+    src: local("Helvetica Neue Bold"),
+         local("HelveticaNeue-Bold"),
+        url('tron.ttf') format('truetype');
+}
+
+
+#canvas {
+  background-image: url('tronbg.jpg');
+}
