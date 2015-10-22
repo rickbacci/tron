@@ -1,11 +1,27 @@
 @font-face {
-    font-family: 'tron';
-    src: local("Helvetica Neue Bold"),
-         local("HelveticaNeue-Bold"),
-        url('tron.ttf') format('truetype');
+  font-family: 'tron';
+  src:  url('tron.ttf') format('truetype');
 }
 
+html {
+  background-color: black;
+  background-image: url('tron_city.jpg');
+}
 
 #canvas {
   background-image: url('tronbg.jpg');
+  display: block;
+  margin: auto;
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.title {
+  font-family: 'tron';
+  color: white;
+  font-size: 5em;
+  text-align: center;
 }
