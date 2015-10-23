@@ -12,6 +12,7 @@ html {
   background-image: url('tronbg.jpg');
   display: block;
   margin: auto;
+  outline: none;
   position: absolute;
     top: 0;
     bottom: 0;
