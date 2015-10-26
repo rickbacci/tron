@@ -7,11 +7,13 @@
 
 html {
   background-color: black;
-  background-image: url('tron_city.jpg');
+  background-image: url('trondes.jpg');
 }
 
 #canvas {
-  background-image: url('tronbg.jpg');
+  background-color: black;
+  background-image: url('sidetron.jpg');
+  background-repeat: no-repeat;
   display: block;
   margin: auto;
   outline: none;
@@ -31,18 +33,22 @@ html {
 
 .player1 {
   font-family: tron;
-  color: #31FDE8;
+  color: #2BE7FA;
   font-size: 2em;
   float: left;
   padding-left: 10%;
+  padding-top: 10%;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 .player2 {
   font-family: tron;
-  color: #FF1818;
+  color: #F43E3D;
   font-size: 2em;
   float: right;
   padding-right: 10%;
+  padding-top: 10%;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 #turbo1 {
@@ -89,4 +95,37 @@ html {
   position: absolute;
   bottom: 10% ;
   left: 42%;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#start-game {
+  font-family: 'tron';
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  bottom: 10% ;
+  left: 40%;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
