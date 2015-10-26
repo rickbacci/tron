@@ -4,6 +4,15 @@
     "window",
     "-Promise"
   ],
+  "globals"   : {
+    /* MOCHA */
+    "describe"   : false,
+    "it"         : false,
+    "before"     : false,
+    "beforeEach" : false,
+    "after"      : false,
+    "afterEach"  : false
+  },
   "browser": true,
   "boss": true,
   "curly": true,
