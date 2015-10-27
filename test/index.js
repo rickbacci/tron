@@ -67,11 +67,11 @@ describe('Canvas boundries', function () {
     var cycle = new Cycle(0, 0, 10, 10, Cycle.canvas, Cycle.context);
 
     cycle.move("left");
-    assert.equal(cycle.x, 600);
+    assert.equal(cycle.x, 800);
   });
 
   it('moves off the screen from right to left', function () {
-    var cycle = new Cycle(600, 0, 10, 10, Cycle.canvas, Cycle.context);
+    var cycle = new Cycle(800, 0, 10, 10, Cycle.canvas, Cycle.context);
 
     cycle.move("right");
     assert.equal(cycle.x, 0);
@@ -81,11 +81,11 @@ describe('Canvas boundries', function () {
     var cycle = new Cycle(0, 0, 10, 10, Cycle.canvas, Cycle.context);
 
     cycle.move("up");
-    assert.equal(cycle.y, 400);
+    assert.equal(cycle.y, 450);
   });
 
   it('moves off the screen from bottom to top', function () {
-    var cycle = new Cycle(0, 600, 10, 10, Cycle.canvas, Cycle.context);
+    var cycle = new Cycle(0, 800, 10, 10, Cycle.canvas, Cycle.context);
 
     cycle.move('down');
     assert.equal(cycle.y, 0);
