@@ -39,11 +39,47 @@
         </div>
     <div class = "reset">
       <div class = "hidden" id = "reset-button">Play Again</div>
-      <div id = "instructions">Instructions</div>
+      <button id = "instructions" data-toggle="modal" data-target="#instruct-modal">Instructions</button>
       <div id = "start-game">Start Game</div>
     </div>
     </div>
 
+    <div id="instruct-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Instructions</h4>
+          </div>
+          <div class="modal-body">
+          <ul>Player 1
+            <li>Up:    "W"</li>
+            <li>Down:  "S"</li>
+            <li>Left:  "A"</li>
+            <li>Right: "D"</li>
+            <li>Turbo: "Q"</li>
+          </ul>
+
+          <ul class = "inst-p2">Player 2
+            <li>Up:    "Up Arrow"</li>
+            <li>Down:  "Down Arrow"</li>
+            <li>Left:  "Left Arrow"</li>
+            <li>Right: "Right Arrow"</li>
+            <li>Turbo: "Right Shift"</li>
+          </ul>
+          <br>
+          <br>
+          <p class = "inst-sound">Toggle Sound: "Enter/Return"</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 
   <audio id = "audio" src="derezzed.mp3" autoplay loop>
