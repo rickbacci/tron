@@ -174,7 +174,7 @@ body {
   color: white;
   font-size: 3em;
   position: absolute;
-  bottom: 30% ;
+  bottom: 35% ;
   left: 42%;
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -212,9 +212,29 @@ body {
                /*background-color: rgba(0, 0, 0, 0.7);*/
  padding: 1% 1% 1% 1%;
  position: absolute;
- bottom: 30% ;
+ bottom: 35% ;
  left: 40%;
                /*border: solid 5px rgb(58, 59, 54);*/
+}
+
+ul{
+  display: inline-block;
+  list-style-type: none;
+
+}
+.modal-dialog {
+  margin-top 20%;
+}
+.modal-body, .modal-header, .modal-footer {
+  font-family: "Russo One";
+  color: white;
+  background-color: black;
+}
+.inst-sound{
+  text-align: center;
+}
+.inst-p2 {
+  padding-left: 55%;
 }
 #instructions {
   font-family: 'tron';
@@ -236,8 +256,17 @@ body {
                0 20px 20px rgba(0,0,0,.15);
 
                /*background-color: rgba(0, 0, 0, 0.7);*/
-               padding: 1% 1% 1% 1%;
-               position: absolute;
-               bottom: 20% ;
-               left: 39%;           /*border: solid 5px rgb(58, 59, 54);*/
+ padding: 1% 1% 1% 1%;
+ position: absolute;
+ bottom: 27% ;
+ left: 39%;
+ background-color: transparent;
+ border: none;
+ cursor:pointer;
+ /*overflow: hidden;*/
+ outline:none;
+}
+
+#instruct-modal {
+  margin-top: 10%;
 }
