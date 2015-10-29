@@ -1,8 +1,8 @@
 const chai     = require('chai');
+const _        = require('lodash');
 const assert   = chai.assert;
-// const Cycle    = require('../lib/cycle.js');
-const Game     = require('../lib/game.js');
-const _        = require('lodash')
+const Game     = require('../lib/game.js').Game;
+
 
 
 describe('Movement', function () {
