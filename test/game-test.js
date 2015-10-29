@@ -134,7 +134,7 @@ describe('Collision Detection', function (){
     game.cycle2.move("down");
     game.updateLightCycleRibbons();
 
-    assert.equal(game.lightRibbons.length, 5);
+    assert.equal(game.lightRibbons.length, 4);
   });
 
 });
