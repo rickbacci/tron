@@ -1,7 +1,8 @@
 const chai     = require('chai');
 const assert   = chai.assert;
-const Game     = require('../lib/game.js');
+const Game     = require('../lib/game.js').Game;
 const Cycle    = require('../lib/cycle.js');
+
 
 describe('Game Start', function () {
   it('Creates a new game', function() {
@@ -62,7 +63,11 @@ describe('Collision Detection', function (){
 
     game.updateLightCycleRibbons();
 
-    assert.equal(game.collision(game.cycle), true);
+    assert.equal(game.state, "started");
+
+    game.collision(game.cycle);
+
+    assert.equal(game.state, "game over");
   });
 
   it('returns collision when 2 cycles meet', function (){
@@ -72,7 +77,11 @@ describe('Collision Detection', function (){
     game.cycle2.x = game.cycle.x;
     game.cycle2.y = game.cycle.y;
 
-    assert.equal(game.collision(game.cycle2), true);
+    assert.equal(game.state, "started");
+
+    game.collision(game.cycle2);
+
+    assert.equal(game.state, "game over");
   });
 
   it('returns collision when using turbo speed', function() {
@@ -82,7 +91,11 @@ describe('Collision Detection', function (){
     game.cycle.move("left");
     game.updateLightCycleRibbons();
 
-    assert.equal(game.collision(game.cycle), true);
+    assert.equal(game.state, "started");
+
+    game.collision(game.cycle);
+
+    assert.equal(game.state, "game over");
   });
 
   it('returns collision when both cycles using turbo speed', function() {
@@ -95,7 +108,11 @@ describe('Collision Detection', function (){
     game.cycle2.move("left");
     game.updateLightCycleRibbons();
 
-    assert.equal(game.collision(game.cycle), true);
+    assert.equal(game.state, "started");
+
+    game.collision(game.cycle);
+
+    assert.equal(game.state, "game over");
   });
 
   it('does not return a collision when cycles do not cross paths', function() {
@@ -105,9 +122,9 @@ describe('Collision Detection', function (){
 
     game.cycle.move("up");
     game.cycle2.move("down");
+    game.collision(game.cycle2);
 
-    assert.equal(game.collision(game.cycle2), false);
-
+    assert.equal(game.state, "started");
   });
 
   it('updates light cycles ribbons', function () {
