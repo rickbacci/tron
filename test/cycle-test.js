@@ -1,4 +1,5 @@
 const chai     = require('chai');
+const _        = require('lodash');
 const assert   = chai.assert;
 const Game     = require('../lib/game.js').Game;
 
