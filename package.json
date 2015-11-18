@@ -1,7 +1,10 @@
 {
-  "name": "game-time-starter-kit",
-  "version": "1.0.0",
-  "description": "A starter kit for Turing School's Game Time project.",
+  "name": "Tron",
+  "version": "1.7.5",
+  "engines": {
+      "node": "5.0.0"
+    },
+  "description": "Remake of Tron the video game",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -12,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/turingschool-examples/game-time-starter-kit.git"
   },
-  "author": "Steve Kinney",
+  "author": "David Shim & Rick Bacci",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/turingschool-examples/game-time-starter-kit/issues"
@@ -34,6 +37,7 @@
     "webpack-dev-server": "^1.10.1"
   },
   "dependencies": {
+    "npm": "^3.3.9 ",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "mocha": "^2.3.3"
