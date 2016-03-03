@@ -2,8 +2,8 @@
   "name": "Tron",
   "version": "1.7.5",
   "engines": {
-      "node": "5.0.0"
-    },
+    "node": "5.0.0"
+  },
   "description": "Remake of Tron the video game",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "sass-loader": "^1.0.2",
     "style-loader": "^0.12.3",
     "webpack": "^1.10.1",
-    "webpack-dev-server": "^1.10.1"
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "npm": "^3.3.9 ",
